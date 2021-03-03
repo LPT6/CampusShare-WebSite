@@ -12,8 +12,12 @@
 易班是一个集教育教学，生活服务，文化娱乐于一体的具有思政特点的一个综合性互动社区，为易班设计了以学习为主的大学生的学习、工作、生活、娱乐分享平台，名叫“易分享”。 
 
 在上面老师和同学等都可以分享自己看到的或自己写的精彩的博文，或拥有的学习等资源，帮助大家学习交流，互相提升，同时也丰富易班的功能。
-	 
+###### 2.作品由来：
+ ![Image text](readme_img/1.png)
+ 
 ##### 二、使用技术
+
+ ![Image text](readme_img/2.png)
  
 A.HTML5
 
@@ -43,21 +47,38 @@ E.Photoshop(页面logo设计，图片剪切，大小调整等)
 ##### 四、设计说明
 
 ###### 1.项目总体分七个部分：首页、分享BLOG、资源画廊、分享投稿、留言反馈、登陆、注册
+
+ ![Image text](readme_img/3.png) ![Image text](readme_img/4.png)
   
 ###### 2.底部链接到学生老师常去常用的网站，方便学生老师使用
+
+ ![Image text](readme_img/5.png)
  
 ###### 3.首页六个板块链接到相的网站，学习4个、生活工作娱乐2个
+
+ ![Image text](readme_img/6.png)
  
 ###### 4.分享BLOG有 珍藏分享、学习工作、生活娱乐、每日一题四个板块 左侧为精彩热门分享
+
+ ![Image text](readme_img/7.png)
  
 ###### 5.分享投稿
- 
+
+ ![Image text](readme_img/8.png)
+
 ###### 6.留言反馈
+  ![Image text](readme_img/9.png)
  
 ###### 7.登录注册
 
+  ![Image text](readme_img/10.png)
+  ![Image text](readme_img/11.png)
  
+ ##### 五、平台展示
 
+ ![Image text](readme_img/12.png)
+ ![Image text](readme_img/13.png)
+ ![Image text](readme_img/14.png)
  
 
  
