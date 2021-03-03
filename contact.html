@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>易分享</title>
+	<meta name="description" content="易分享，一个西华人自己的分享社区，我们一起来分享吧！">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+	<link href="./images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			maxwidth: 962,
+			namespace: "centered-btns"
+		  });
+		});
+	</script>
+</head>
+<body>
+<!--------------Header--------------->
+<header>
+	<div class="wrap-header zerogrid">
+		<div id="logo">
+			<a href="#"><img src="./images/logo.png"/></a>
+			<ul>
+				<li>
+					<a href="login.html" target="_blank"><left><strong>&nbsp;&nbsp;登录</strong></left></a>
+					<a href="register.html" target="_blank"><left><strong>&nbsp;注册</strong></left></a>
+        		</li>
+			</ul>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="http://www.yiban.cn"><img src="./images/social/yiban.png" /></a></li>
+				<li><a href="http://www.xhu.edu.cn/"><img src="./images/social/xhuico.jpg" /></a></li>
+			</ul>
+	  	</div>
+		<nav>
+			<div class="wrap-nav">
+				<div class="menu">
+					<ul>
+					  <li><a href="index.html">首页</a></li>
+					  <li><a href="blog.html">分享BLOG</a></li>
+					  <li><a href="gallery.html">资源画廊</a></li>
+					  <li><a href="single.html">分享投稿</a></li>
+					  <li class="current"><a href="contact.html">留言反馈</a></li>
+					</ul>
+				</div>
+				
+				<div class="minimenu"><div>菜单</div>
+					<select onchange="location=this.value">
+						<option></option>
+						<option value="index.html">首页</option>
+						<option value="blog.html">分享BLOG</option>
+						<option value="gallery.html">资源画廊</option>
+						<option value="single.html">分享投稿</option>
+						<option value="contact.html">留言反馈</option>
+					</select>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<!--------------Content--------------->
+<script type="text/javascript">
+    
+    //字数限制
+    window.onload = function() {
+        //（document）
+        document.getElementById('note').onkeyup = function() {        
+            document.getElementById('text-count').innerHTML=this.value.length;
+        }
+    //（jquery）
+        $('#note2').keyup(function() {
+        //    var val=$('#note2').val();
+        //    var len=val.length;
+        var len=this.value.length
+                    $('#text-count2').text(len);
+
+        })
+    }
+</script>
+<section id="content">
+	<div class="wrap-content zerogrid">
+		<div class="row block05">
+			<div class="title"><span>CONTACT US</span></div>
+			<div class="col-2-3">
+				<div class="wrap-col">
+					<article>
+						<div class="comment">
+							如果您对我们有什么建议或想法，请留言反馈给我们
+							
+						  <form>
+								<div><input type="text" name="name" id="name"> Name</div>
+								<div><input type="email" name="email" id="email"> Email</div>
+								<div>
+									<textarea rows="12" id="note" name="note" maxlength="300" value="" onkeyup="this.value=this.value.substring(0, 300)" placeholder="最多可输入300字">		</textarea><span id="text-count" value="">0</span>/300</div>
+								<div><input type="submit" name="submit" value="提交"></div>
+							</form>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Find Us</h2></div>
+						<div class="content">
+							<img src="images/map.png"/>
+							<p>四川省成都市郫都区红光大道9999号，西华大学计算机与软件工程学院</p>
+							<p>Phone : 18753649621</p>
+							<p>QQ : 876544126</p>
+							<p>Email : 11382481@qq.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrap-footer zerogrid">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="wrap-col">
+				  <div class="box">
+						<div class="heading"><h2>About Us</h2></div>
+						<div class="content">
+						  <p>易分享是一个属于<a href="http://www.yiban.cn/school/index/id/5000090">易班平台</a>的以学习为主的西华人自己的学习、工作、生活、娱乐分享社区。来吧，跟我一起来分享！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+					  <div class="heading"><h2>Categories</h2></div>
+						<div class="content">
+							<div class="tag">
+								<a href="http://www.xhu.edu.cn/">西华大学</a>
+								<a href="http://jwc.xhu.edu.cn/">教务系统</a>
+								<a href="http://urp.xhu.edu.cn/login/xhu/login.jsp?errorCode=000">信息门户</a>
+								<a href="http://www.yiban.cn/school/index/id/5000090">易班网</a>
+								<a href="四川旅游网/成都旅游美食网.html">四川旅游美食网</a>
+								<a href="WordPress/又一个WordPress站点.html">WrodPress博客</a>
+								<a href="http://www.lib.xhu.edu.cn/">阿里云</a>
+								<a href="http://kczx.xhu.edu.cn/G2S/Showsystem/Index.aspx">课程中心</a>
+								<a href="https://www.icourse163.org/">Mooc慕课</a>
+								<a href="http://202.115.144.131/SystemForm/main.htm">学工系统</a>
+								<a href="http://www.lib.xhu.edu.cn/">图书馆</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Contact Us</h2></div>
+						<div class="content">
+							<ul>
+								<li>Address : 西华大学计算机与软件工程学院</li>
+								<li>Phone :18753649621</li>
+								<li>Email : 11382481@qq.com</li>
+								<li>WeChat subscription number : 是peng哥哒</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+	  <p>Copyright © 2018 - 易分享 by LP</p>
+	</div>
+</footer>
+</body></html>
